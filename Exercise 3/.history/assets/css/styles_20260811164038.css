@@ -1,0 +1,18 @@
+body {
+    background-color: #FBE79C;
+}
+
+
+.accordionTitle {
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.accordionTitle + .accordionContent {
+    display: none;
+}
+
+.accordionTitle.is-open + .accordionContent {
+    display: block;
+}

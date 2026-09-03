@@ -1,0 +1,95 @@
+const accordionTitles = document.querySelectorAll(".accordionTitle");
+
+accordionTitles.forEach((accordionTitle) => {
+    accordionTitle.addEventListener("click", () => {
+        if (accordionTitle.classList.contains("is-open")) {
+            accordionTitle.classList.remove("is-open");
+        } else {
+            const accordionTitlesWithIsOpen = document.querySelectorAll(".is-open");
+
+            accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
+                accordionTitleWithIsOpen.classList.remove("is-open");
+            });
+            accordionTitle.classList.add("is-open");
+        }
+    });
+});
+
+function powerUsage () {
+     let x = document.getElementById("apu").value;
+     return x;
+}
+
+function hoursUse () {
+     let x = document.getElementById("ahu").value;
+     return x;
+}
+
+function electricityPrice () {
+     let x = document.getElementById("eprice").value;
+     return x;
+}
+
+function calculateResults () {
+    let powerUsage = document.getElementById("apu").value;
+    let hoursUse = document.getElementById("ahu").value;
+    let electricityPrice = document.getElementById("eprice").value;
+let message;
+
+if (isNaN(powerUsage) || isNaN(hoursUse)) {
+    message = "Please enter both Appliance power usage (in watts) and Average hours of use per day values.";
+} else {
+    message = "";
+}
+
+
+document.getElementById("dailyEnergy").innerHTML = dailyEnergyConsumption(powerUsage,hoursUse);
+
+document.getElementById("monthlyEnergy").innerHTML = monthlyEnergyConsumption(powerUsage,hoursUse);
+
+document.getElementById("yearlyEnergy").innerHTML = yearlyEnergyConsumption(powerUsage,hoursUse);
+
+document.getElementById("estMonthly").innerHTML = estCostOverTimeMonthly (powerUsage, hoursUse, electricityPrice);
+
+document.getElementById("estYearly").innerHTML = estCostOverTimeMonthly (powerUsage, hoursUse, electricityPrice);
+}
+
+function dailyEnergyConsumption () {
+    if(!isNaN(powerUsage()) || !isNaN(hoursUse()))
+        {document.getElementById("dailyEnergy").innerHTML = (powerUsage() * hoursUse()) / 1000; }
+    else {
+        document.getElementById("dailyEnergy").innerHTML = "?";
+    }
+}
+
+function monthlyEnergyConsumption () {
+    if(!isNaN(powerUsage()) || !isNaN(hoursUse()))
+        {document.getElementById("monthlyEnergy").innerHTML = (powerUsage() * hoursUse() * 30) / 1000;}
+        else {
+        document.getElementById("monthlyEnergy").innerHTML = "?";
+    }
+}
+
+function yearlyEnergyConsumption () {
+     if(!isNaN(powerUsage()) || !isNaN(hoursUse()))
+    {document.getElementById("yearlyEnergy").innerHTML = (powerUsage() * hoursUse() * 365) / 1000;}
+         else {
+        document.getElementById("yearlyEnergy").innerHTML = "?";
+    }
+}
+
+function estCostOverTimeMonthly () {
+     if(!isNaN(powerUsage()) || !isNaN(hoursUse()) || !isNaN(electricityPrice()))
+    {document.getElementById("estMonthly").innerHTML = ((powerUsage() * hoursUse() * 30) / 1000) * electricityPrice();}
+         else {
+        document.getElementById("estMonthly").innerHTML = "?";
+    }
+}
+
+function estCostOverTimeYearly () {
+     if(!isNaN(powerUsage()) || !isNaN(hoursUse()) || !isNaN(electricityPrice()))
+        {document.getElementById("estYearly").innerHTML = ((powerUsage() * hoursUse() * 365) / 1000) * electricityPrice();} 
+    else {
+        document.getElementById("estYearly").innerHTML = "?";
+    }
+}

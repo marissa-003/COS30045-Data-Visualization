@@ -29,7 +29,7 @@ Example:
 
 Original repository : "github.com/rishmaf/COS30045-Data-Visualization/energy-webpage"
 
-Your forked repository : "github.com/yourusername/COS30045-Data-Visualization/energy-webpage"
+Your forked repository : "github.com/marissa-003/COS30045-Data-Visualization/energy-webpage"
 
 
 ---

@@ -1,0 +1,51 @@
+body {
+    background-color: #FBE79C;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color:#81663E;
+    text-shadow: 5px 5px 5px #F7A327;
+}
+
+.button {
+    padding: 16px 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #81663E;
+}
+
+.buttonStyle {
+    border: 6px solid #81663E;
+    background-color: #f7f4c2;
+    margin: 40px 20px;
+}
+
+.buttonStyle:hover {
+    background-color: #F7A327;
+}
+
+section {
+    background-color: #F7A327;
+    border-style: dotted;
+}
+
+footer {
+    border: 6px solid #81663E;
+    background-color: #f7f4c2;
+}
+
+.accordionTitle {
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.accordionTitle + .accordionContent {
+    display: none;
+}
+
+.accordionTitle.is-open + .accordionContent {
+    display: block;
+}

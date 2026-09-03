@@ -1,0 +1,28 @@
+body {
+    background-color: #FBE79C;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.button {
+    padding: 16px 32px;
+}
+
+.buttonStyle {
+    border: 6px solid #81663E;
+    background-color: #f7f4c2;
+}
+
+.accordionTitle {
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.accordionTitle + .accordionContent {
+    display: none;
+}
+
+.accordionTitle.is-open + .accordionContent {
+    display: block;
+}

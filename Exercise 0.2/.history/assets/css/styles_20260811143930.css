@@ -1,0 +1,12 @@
+.accordionTitle {
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordionTitle + .accordionContent {
+    display: none;
+}
+
+.accordionTitle.is-open + .accordionContent {
+    display: block;
+}
