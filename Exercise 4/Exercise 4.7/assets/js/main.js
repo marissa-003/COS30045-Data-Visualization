@@ -9,7 +9,7 @@ const svg = d3.select(".responsive-svg-container")
 
  
 
-d3.csv("../data/2026TVData.csv", d => {
+d3.csv("../assets/data/2026TVData.csv", d => {
 
   return {
 
