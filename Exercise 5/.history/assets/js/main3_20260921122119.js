@@ -1,4 +1,4 @@
-d3.csv("../assets/data/Data_exercise_5.3.csv", d => {
+d3.csv("../data/Data_exercise_5.3.csv", d => {
 
   return {
 

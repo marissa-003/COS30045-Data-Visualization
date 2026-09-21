@@ -1,4 +1,4 @@
-d3.csv("../assets/data/ARE_Spot_Prices_dataset.csv", d => {
+d3.csv("../data/ARE_Spot_Prices_dataset.csv", d => {
 
   return {
 
