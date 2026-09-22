@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House</title> </head>
+        <link rel="stylesheet" href="assets/css/styles.css"/> </link>
+<body>
+<h1>Exercise 4.1</h1>
+<p>House image at the left assisted by AI (Google's AI mode), while the house image at the right is modified without AI assist.</p>
+<svg xmlns="http://w3.org" viewBox="0 0 720 720" width="600" height="600">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="720" height="435" fill="#87CEEB" />
+
+  <!-- Ground -->
+  <rect x="0" y="435" width="720" height="285" fill="#008000" />
+
+  <!-- Sun -->
+  <circle cx="580" cy="145" r="58" fill="#FFFF00" />
+
+  <!-- Tree trunk -->
+  <rect x="114" y="372" width="28" height="135" fill="#A0522D" />
+
+  <!-- Tree canopy (Circle canopy) -->
+  <circle cx="128" cy="300" r="60" fill="#2E8B57" />
+
+  <!-- House main base -->
+  <rect x="215" y="288" width="292" height="219" fill="#8B4513" />
+
+  <!-- House roof -->
+  <polygon points="215,288 507,288 361,135" fill="#CD853F" />
+
+  <!-- Left Window -->
+  <rect x="245" y="315" width="55" height="55" fill="#ADD8E6" />
+
+  <!-- Right Window -->
+  <rect x="425" y="315" width="55" height="55" fill="#ADD8E6" />
+
+  <!-- Door -->
+  <rect x="331" y="390" width="60" height="117" fill="#A0522D" />
+
+  <!-- Doorknob -->
+  <circle cx="373" cy="450" r="7" fill="#000000" />
+
+  <!-- Completed Yellow Path -->
+  <path d="M 315,507 C 220,530 180,620 330,680 C 370,695 395,708 415,720" fill="none" stroke="#FFA500" stroke-width="8" />
+  <path d="M 365,507 C 270,530 230,620 380,680 C 420,695 445,708 465,720" fill="none" stroke="#FFA500" stroke-width="8" />
+
+  <!-- "House" Text -->
+  <text x="551" y="420" font-family="Arial, sans-serif" font-size="32" fill="#000000">House</text>
+</svg>
+
+
+
+<!--Canvas frame-->
+    <svg width="800" height="600" style="border:5px solid #aa5828;">
+<!--Background color-->
+        <rect x="0" y="0" width="800" height="600" fill="#c0e0ed"/> </rect>
+        <rect x="0" y="350" width="800" height="250" fill="#75c96d"/> </rect>
+<!--Sun-->
+        <circle cx="130" cy="80" r="50" fill="#eef567" stroke="#eba92f" stroke-width="5" /></circle>
+
+<!--Path-->
+<path d="M-100 480 C 190 380, 205 380, 155 450 S 310 620, 400 450" fill="none" stroke="#600e0e" stroke-width="15"></path>
+<!--House-->
+<rect x="270" y="250" width="250" height="220" fill="#7a5b3b"></rect>
+<polygon points="400,140 230,270 570,270" style="fill:#e3310d;stroke:#600e0e;stroke-width:6"></polygon>
+<line x1="330" y1="195" x2="470" y2="195" stroke="#600e0e"></line>
+<rect x="370" y="370" width="50" height="100" fill="#c9955f"></rect> 
+<rect x="300" y="300" width="50" height="50" fill="#a6e0de"></rect>
+<rect x="440" y="300" width="50" height="50" fill="#a6e0de"></rect>
+<circle cx="410" cy="419" r="10" fill="#600e0e"></circle>
+
+<!--Flowers-->
+<ellipse cx="600" cy="419" rx="10" ry="6" fill="#ffa6e9" /></ellipse>
+<ellipse cx="610" cy="409" rx="6" ry="10" fill="#ffa6e9"></ellipse>
+<ellipse cx="620" cy="419" rx="10" ry="6" fill="#ffa6e9"></ellipse>
+<ellipse cx="610" cy="429" rx="6" ry="10" fill="#ffa6e9"></ellipse>
+<circle cx="610" cy="419" r="5" fill="#f7fa5c"></circle>
+
+<ellipse cx="700" cy="519" rx="10" ry="6" fill="#ffa6e9" /></ellipse>
+<ellipse cx="710" cy="509" rx="6" ry="10" fill="#ffa6e9"></ellipse>
+<ellipse cx="720" cy="519" rx="10" ry="6" fill="#ffa6e9"></ellipse>
+<ellipse cx="710" cy="529" rx="6" ry="10" fill="#ffa6e9"></ellipse>
+<circle cx="710" cy="519" r="5" fill="#f7fa5c"></circle>
+
+<!--Text-->
+<text x="550" y="350" font-family="Times New Roman" font-size="40" fill="black">My house!</text>
+</svg>
+
+<table style="width:100%">
+  <tr>
+    <th>Elements</th>
+    <th>Before</th>
+    <th>After</th>
+  </tr>
+  <tr>
+    <td>Canvas size</td>
+    <td>width="600" height="600"</td>
+    <td>width="800" height="600"</td>
+  </tr>
+  <tr>
+    <td>Background colour</td>
+    <td>fill="#87CEEB"</td>
+    <td>fill="#c0e0ed"</td>
+  </tr>
+</table>
+
+</body>
+</html>
