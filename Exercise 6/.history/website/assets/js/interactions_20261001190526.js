@@ -1,0 +1,69 @@
+const populateFilters = (data) => {
+
+d3.select("#filters_screen")
+.selectAll(".filter")
+.data(filters_screen)
+.join("button")
+.attr("class", d => `filter ${d.isActive ? "active" : ""}`)
+.text(d => d.label)
+
+.on("click", (e,d)=> {
+    console.log("Clicked filter:", e);
+    console.log("Clicked filter data:", d);
+
+
+if (!d.isActive) {
+    filters_screen.forEach(filter => {
+        filter.isActive = d.id === filter.id ? true : false;
+    });
+
+    d3.selectAll("#filters_screen .filter")
+    .classed("active", filter => filter.id === d.id ? true : false);
+
+    
+} 
+const updateHistogram = (filterId, data) => {
+    const updatedData = filterId === "all"
+    ? data
+    : data.filter(tv => tv.screenTech === filterId);
+
+    const updatedBins = binGenerator(updatedData);
+
+    d3.selectAll("#histogram rect")
+    .data(updatedBins)
+    .transition()
+    .duration(500)
+    .ease(d3.easeCubicInOut)
+    .attr("y", d => yScale(d.length))
+    .attr("height", d => innerHeight - yScale(d.length));
+
+const svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Initialize the Y axis
+const y = d3.scaleLinear()
+  .range([ height, 0]);
+const yAxis = svg.append("g")
+  .attr("class", "myYaxis");
+
+   // Add Y axis
+    y.domain([0, 2000 ]);
+    yAxis.transition().duration(1000).call(d3.axisLeft(y));
+
+}
+
+
+
+updateHistogram(d.id, data); //line 41 assisted by AI
+}
+
+);
+
+
+
+};
+
