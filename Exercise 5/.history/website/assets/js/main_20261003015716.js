@@ -117,4 +117,4 @@ innerChart
 
 };
 
-//Line 105 to 116 is AI-assisted and modified, and with https://d3-graph-gallery.com/graph/circular_barplot_label.html d3 v6 as reference to Line 113
+//Line 105 to 116 is AI-assisted and modified, and with https://d3-graph-gallery.com/graph/circular_barplot_label.html as reference
