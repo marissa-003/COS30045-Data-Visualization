@@ -68,42 +68,49 @@ Your forked repository will serve as your **submission record**.
 I confirm that I have used GenAI tools (e.g., ChatGPT, Grammarly, Gemini) to support the completion of this assignment. I have described how GenAI tools were used in this assignment. In-text citation was provided whenever GenAI generated content was used.
 
 (1)
-### File
+##### File
 interactions.js
 
-### AI used
+##### AI used
 Microsoft VS Code Copilot
 
-### Usage Purpose
+##### Usage Purpose
 Update histogram chart’s y-axis values when a filter button is clicked (line 32 to 33)
 
-### How AI is modified
+##### How AI is modified
 Non modified as the code will break.
+
+
+
+
 
 (2)
-### File
+##### File
 interactions.js
 
-### AI used
+##### AI used
 Microsoft VS Code Copilot
 
-### Usage Purpose
+##### Usage Purpose
 Update histogram chart when a filter button is clicked (line 49)
 
-### How AI is modified
+##### How AI is modified
 Non modified as the code will break.
+
+
+
 
 
 (3)
-### File
+##### File
 interactions.js
 
-### AI used
+##### AI used
 Microsoft VS Code Copilot
 
-### Usage Purpose
+##### Usage Purpose
 Making tooltips appear for each dot in scatterplot (line 87)
 
-### How AI is modified
+##### How AI is modified
 Non modified as the code will break.
 

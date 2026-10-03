@@ -62,51 +62,59 @@ I confirm that I have used GenAI tools (e.g., ChatGPT, Grammarly, Gemini) to sup
 
 (1)
 
-###### File
+##### File
 
 main.js
 
 
 
-###### AI used
+##### AI used
 
 Google AI Mode
 
 
 
-###### Usage Purpose
+##### Usage Purpose
 
 Making labels for bars appear in bar chart (line 105 to 116)
 
 
 
-###### How AI is modified
+##### How AI is modified
 
 Modified the code with https://d3-graph-gallery.com/graph/circular\_barplot\_label.html as a reference
 
 
 
+
+
+
+
+
+
+
+
 (2)
 
-###### File
+##### File
 
 main2.js
 
 
 
-###### AI used
+##### AI used
 
 Google AI Mode
 
 
 
-###### Usage Purpose
+##### Usage Purpose
 
 Line chart direction fix (line 21)
 
 
 
-###### How AI is modified
+##### How AI is modified
 
 Modified the code to match the dataset’s columns
 
@@ -114,27 +122,33 @@ Modified the code to match the dataset’s columns
 
 
 
+
+
+
+
+
+
 (3)
 
-###### File
+##### File
 
 main2.js
 
 
 
-###### AI used
+##### AI used
 
 Google AI Mode
 
 
 
-###### Usage Purpose
+##### Usage Purpose
 
 Making dots appear for the line chart (line 61 to 71)
 
 
 
-###### How AI is modified
+##### How AI is modified
 
 Modified the code such as custom name “myCircles” to some of those specific lines of code, and color customization with green circles
 
