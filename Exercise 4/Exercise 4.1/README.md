@@ -8,25 +8,25 @@ I confirm that I have used GenAI tools (e.g., ChatGPT, Grammarly, Gemini) to sup
 
 (1)
 
-##### File
+#### File
 
 house-updated.html
 
 
 
-##### AI used
+#### AI used
 
 Google AI Mode
 
 
 
-##### Usage Purpose
+#### Usage Purpose
 
 “Before” SVG image code reference (line 10 to 50)
 
 
 
-##### How AI is modified
+#### How AI is modified
 
 Resized the SVG image size
 
