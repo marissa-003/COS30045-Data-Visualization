@@ -1,9 +1,11 @@
 # Exercise 5 – Multi-Chart Webpage
 
 ## Aim
+
 Create a variety of different chart types using **D3.js**.
 
 ## Purpose
+
 In previous exercises, we created simple charts such as a horizontal bar chart. In this exercise, you will extend your skills by building multiple chart types and presenting them on a webpage.
 
 This activity focuses on using **D3 to visualise different types of data** and understanding when different charts are appropriate.
@@ -12,17 +14,14 @@ This activity focuses on using **D3 to visualise different types of data** and u
 
 Using the provided **TV energy consumption dataset** (or your own dataset), your webpage must include the following chart types:
 
-- **Scatter Plot**  
-  Energy consumption vs star rating.
-
-- **Donut Chart**  
-  Energy consumption for different screen technologies across all TVs combined.
-
-- **Bar Chart**  
-  Energy consumption for different screen technologies for **55-inch TVs only**.
-
-- **Line Chart**  
-  Spot power prices from **1998 to 2024** (either plot the average or include a line for each state).
+* **Scatter Plot**  
+Energy consumption vs star rating.
+* **Donut Chart**  
+Energy consumption for different screen technologies across all TVs combined.
+* **Bar Chart**  
+Energy consumption for different screen technologies for **55-inch TVs only**.
+* **Line Chart**  
+Spot power prices from **1998 to 2024** (either plot the average or include a line for each state).
 
 You may use the **provided datasets** or your **own dataset**, but your webpage must include **one example of each chart type**.
 
@@ -30,8 +29,8 @@ You may use the **provided datasets** or your **own dataset**, but your webpage 
 
 Before starting this exercise, it is recommended that you:
 
-- Review this week's **lecture slides**
-- Review **Chapter 4 and Chapter 5 of Dufour and Meeks (2024)**
+* Review this week's **lecture slides**
+* Review **Chapter 4 and Chapter 5 of Dufour and Meeks (2024)**
 
 ## Instructions
 
@@ -48,6 +47,98 @@ Use the **forked repository that you created earlier for this unit**.
 Your **forked repository** will serve as your submission.
 
 Ensure that:
-- All Exercise 5 files are inside the **Exercise 5 folder**
-- Your code is pushed to GitHub
-- Your repository link is submitted through the submission system.
+
+* All Exercise 5 files are inside the **Exercise 5 folder**
+* Your code is pushed to GitHub
+* Your repository link is submitted through the submission system.
+
+
+
+## AI Declaration
+
+I confirm that I have used GenAI tools (e.g., ChatGPT, Grammarly, Gemini) to support the completion of this assignment. I have described how GenAI tools were used in this assignment. In-text citation was provided whenever GenAI generated content was used.
+
+
+
+(1)
+
+###### File
+
+main.js
+
+
+
+###### AI used
+
+Google AI Mode
+
+
+
+###### Usage Purpose
+
+Making labels for bars appear in bar chart (line 105 to 116)
+
+
+
+###### How AI is modified
+
+Modified the code with https://d3-graph-gallery.com/graph/circular\_barplot\_label.html as a reference
+
+
+
+(2)
+
+###### File
+
+main2.js
+
+
+
+###### AI used
+
+Google AI Mode
+
+
+
+###### Usage Purpose
+
+Line chart direction fix (line 21)
+
+
+
+###### How AI is modified
+
+Modified the code to match the dataset’s columns
+
+
+
+
+
+(3)
+
+###### File
+
+main2.js
+
+
+
+###### AI used
+
+Google AI Mode
+
+
+
+###### Usage Purpose
+
+Making dots appear for the line chart (line 61 to 71)
+
+
+
+###### How AI is modified
+
+Modified the code such as custom name “myCircles” to some of those specific lines of code, and color customization with green circles
+
+
+
+
+

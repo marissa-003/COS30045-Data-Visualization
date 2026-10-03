@@ -77,3 +77,8 @@ When submitting your assignment:
 Example submission link:
 
 https://github.com/yourusername/COS30045-data-visualisation
+
+
+### AI Acknowledgement
+
+I confirm that I have used GenAI tools (e.g., ChatGPT, Grammarly, Gemini) to support the completion of this assignment. I have described how GenAI tools were used in this assignment. In-text citation was provided whenever GenAI generated content was used. See respective README text files in Exercise 4.1, Exercise 5 and Exercise 6 folders for more information.
